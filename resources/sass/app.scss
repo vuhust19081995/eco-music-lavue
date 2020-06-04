@@ -1,9 +1,33 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 // Variables
 @import 'variables';
+@import 'header';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import "~vuetify/dist/vuetify.min.css";
+
+body{
+    background-color: $body-bg;
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        overflow-x: scroll;
+        width: 780px;
+    }
+}
+
+.remove--outline:focus{
+    outline: none;
+}
+
+.nav-container{
+    margin: 0 auto;
+    max-width: 1026px;
+}
+
+
