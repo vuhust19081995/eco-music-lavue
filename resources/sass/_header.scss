@@ -1,48 +1,87 @@
-.nav__top{
+.top-bar {
+    height: 70px;
+}
+
+.top-bar-inner {
+    height: 70px;
     display: flex;
-    height: 60px;
-    padding: 10px 0;
-    flex-wrap: wrap;
+    width: 1026px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
 
-    .icon--search--color{
-        width: 3%;
-        color: #A0A0A0;
+.logo {
+    flex-shrink: 1;
+}
+
+.icon--search--color {
+    color: #A0A0A0;
+}
+
+.img-logo {
+    margin-left: 18px;
+    margin-top: 17px;
+    width: 40px;
+    height: 40px;
+}
+
+.top-bar-search {
+    position: relative;
+}
+
+.top-bar-user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.text--search--input--color {
+    color: #A0A0A0;
+}
+
+.top-bar-search-inner {
+    width: 538px;
+}
+
+.search-input {
+    background-color: #281943;
+    height: 45px;
+    margin-top: 17px;
+    position: relative;
+
+    i {
+        font-size: 22px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
     }
 
-    .img-logo{
-        width: 40px;
-        height: 40px;
+    input {
+        width: 90%;
+        background-color: transparent;
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        font-family: inherit;
+        font-size: 14px;
     }
+}
 
-    .logo{
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-    }
+.search-input-hide-autocomplete {
+    border: 1px solid #403258;
+    border-radius: 30px;
+}
 
-    .nav__top__search{
-        flex-grow: 2;
-        background-color: #281943;
-        border: 1px solid #403258;
-        border-radius: 30px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
+.search-input-show-autocomplete {
+    border: none;
+    border-radius: 25px 25px 0 0;
+}
 
-    .search__input{
-        padding: 0 10px;
+.auto-complete-items {
+    background-color: #281943;
+    border-radius: 0 0 25px 25px;
+    padding: 15px;
 
-        input{
-            width: 96%;
-        }
-    }
-
-    .nav__top__user__profile{
-        flex-grow: 1;
-    }
-
-    .text--search--input--color{
-        color: #A0A0A0;
+    div {
+        color: white;
     }
 }

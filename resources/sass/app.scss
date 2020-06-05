@@ -17,7 +17,6 @@ body{
 @media screen and (max-width: 780px) {
     body {
         overflow-x: scroll;
-        width: 780px;
     }
 }
 
@@ -25,9 +24,5 @@ body{
     outline: none;
 }
 
-.nav-container{
-    margin: 0 auto;
-    max-width: 1026px;
-}
 
 

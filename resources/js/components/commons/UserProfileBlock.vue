@@ -1,13 +1,13 @@
 <template>
-    <a class="circle-block" :class="{'circle--block--bg--user-profile': isUserProfile}">
+    <a class="circle-block" :class="{'bg--user--profile': isUserProfile}">
         <slot></slot>
     </a>
 </template>
 
 <script>
     export default {
-        props:['isUserProfile'],
-        name: "CircleBlock"
+        props: ['isUserProfile'],
+        name: "UserProfileBlock"
     }
 </script>
 
@@ -17,24 +17,28 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 42px;
-        height: 42px;
+        width: 43px;
+        height: 43px;
         border-radius: 50%;
         background-color: #231F3B;
         padding: 5px;
-        margin-right: 5px;
-        cursor:pointer;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #1b4b72;
+        }
 
         i {
             -webkit-text-stroke: 1px white;
         }
     }
 
-    .circle--block--bg--user-profile{
+    .bg--user--profile {
         background-color: #CDD5E2;
     }
 
-    .user--profile--icon--color{
+    .user--profile--icon--color {
         color: white;
     }
 </style>
