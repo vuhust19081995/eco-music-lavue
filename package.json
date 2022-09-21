@@ -35,7 +35,7 @@
         "@material-ui/core": "^4.9.14",
         "@material-ui/icons": "^4.9.1",
         "vue-router": "^3.1.6",
-        "vuetify": "^2.2.27",
+        "vuetify": "^2.6.10",
         "vuetify-loader": "^1.4.3"
     }
 }
